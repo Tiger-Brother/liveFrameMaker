@@ -10,15 +10,29 @@
 	<!-- stylesheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>オンラインイベント用のフレームを生成するツール</title>
+	<title>オンラインイベント用のフレームを生成するツール（開発中）</title>
 </head>
 <body>
 
 	<div class="container">
-		<h1>オンラインイベント用のフレームを生成するツール</h1>
+		<h1>オンラインイベント用のフレームを生成するツール（開発中）</h1>
 		<p>
 			オンラインイベント用に透過PNG形式のフレーム画像を生成するツールです。
 		</p>
+
+		<canvas id="frame" class="hidden" width="1920px" height="1080px"></canvas>
+
+		<div class="row">
+			<div class="col-12 col-lg-8" style="background: red;">
+				<img src="" width="100%">
+			</div>
+			<div class="col-12 col-lg-4 form" style="background: green;">
+				<div class="input-group mb-3">
+					<input id="title" type=text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+				</div>
+			</div>
+		</div>
+
 
 		<hr>
 		<p>
