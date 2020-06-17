@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	
+
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -26,10 +26,62 @@
 			<div class="col-12 col-lg-8" style="background: red;">
 				<img src="" width="100%">
 			</div>
-			<div class="col-12 col-lg-4 form" style="background: green;">
-				<div class="input-group mb-3">
-					<input id="title" type=text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+			<div class="col-12 col-lg-4 form">
+
+				<div class="card">
+					<div class="card-header">全体設定</div>
+					<div class="card-body">
+
+
+						<div class="form-group">
+							<label for="event_title">フレームタイプ</label>
+
+							<div class="input-group-append btn-group-toggle btn-group" data-toggle="buttons" id="frameType">
+								<label class="btn btn-secondary active">
+									<input type="radio" name="frameType" value="A"> A
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="frameType" value="B"> B
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="frameType" value="C"> C
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="frameType" value="D"> D
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="frameType" value="E"> E
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="event_title">サイズ</label>
+							<div class="input-group-append btn-group-toggle btn-group" data-toggle="buttons" id="frameSize">
+								<label class="btn btn-secondary active">
+									<input type="radio" name="frameSize" value="FHD"> 1920*1080
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="frameSize" value="HD"> 1280*720
+								</label>
+							</div>
+						</div>
+						
+					</div>
 				</div>
+
+
+				<div class="card">
+					<div class="card-header">タイトル設定</div>
+					<div class="card-body">
+						<div class="form-group">
+							<label for="eventTitle">イベントタイトル（OBSで設定の場合はブランク）</label>
+							<textarea class="form-control" id="event_title" rows="3"></textarea>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 

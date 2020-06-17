@@ -1,7 +1,16 @@
+/*body{
+	background-color: #333;
+	color: white;
+}*/
+
 .hidden{
 	display: none;
 }
 
 h1{
 	padding-top:20px;
+}
+
+.card{
+	margin-bottom: 1em;
 }
