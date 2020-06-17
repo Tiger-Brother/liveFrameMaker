@@ -34,57 +34,112 @@
 
 
 						<div class="form-group">
-							<label for="event_title">フレームタイプ</label>
+							<label for="layout">レイアウト</label>
 
-							<div class="input-group-append btn-group-toggle btn-group" data-toggle="buttons" id="frameType">
-								<label class="btn btn-secondary active">
-									<input type="radio" name="frameType" value="A"> A
+							<div class="input-group-append btn-group-toggle btn-group" data-toggle="buttons" id="layout">
+								<label class="btn btn-outline-secondary active">
+									<input type="radio" name="layout" value="A"> A
 								</label>
-								<label class="btn btn-secondary">
-									<input type="radio" name="frameType" value="B"> B
+								<label class="btn btn-outline-secondary">
+									<input type="radio" name="layout" value="B"> B
 								</label>
-								<label class="btn btn-secondary">
-									<input type="radio" name="frameType" value="C"> C
+								<label class="btn btn-outline-secondary">
+									<input type="radio" name="layout" value="C"> C
 								</label>
-								<label class="btn btn-secondary">
-									<input type="radio" name="frameType" value="D"> D
+								<label class="btn btn-outline-secondary">
+									<input type="radio" name="layout" value="D"> D
 								</label>
-								<label class="btn btn-secondary">
-									<input type="radio" name="frameType" value="E"> E
+								<label class="btn btn-outline-secondary">
+									<input type="radio" name="layout" value="E"> E
 								</label>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label for="event_title">サイズ</label>
+							<label for="frameSize">サイズ</label>
 							<div class="input-group-append btn-group-toggle btn-group" data-toggle="buttons" id="frameSize">
-								<label class="btn btn-secondary active">
+								<label class="btn btn-outline-secondary active">
 									<input type="radio" name="frameSize" value="FHD"> 1920*1080
 								</label>
-								<label class="btn btn-secondary">
+								<label class="btn btn-outline-secondary">
 									<input type="radio" name="frameSize" value="HD"> 1280*720
 								</label>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
+
+				<div class="card">
+					<div class="card-header">背景設定</div>
+					<div class="card-body">
+						<div class="form-group mb-3">
+							<label for="bgImage">背景画像</label>
+							<select class="custom-select" id="bgImage">
+								<option value="sky">青空</option>
+								<option value="computer">パソコン</option>
+								<option value="cafe">カフェ</option>
+								<option value="custom">画像をアップロード…</option>
+							</select>
+						</div>
+
+						<div class="form-group mb-3">
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="customBgImage" aria-describedby="inputGroupFileAddon01">
+								<label class="custom-file-label" for="customBgImage">Choose file</label>
+							</div>
+						</div>
+
+						<label for="eventTitle">明るさ</label>
+
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<button class="btn btn-outline-secondary" type="button">-10</button>
+								<button class="btn btn-outline-secondary" type="button">-5</button>
+							</div>
+							<input type="text" class="form-control" id="bgBrightness" aria-describedby="button-addon3" value="0">
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button">+5</button>
+								<button class="btn btn-outline-secondary" type="button">+10</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
 
 
 				<div class="card">
 					<div class="card-header">タイトル設定</div>
 					<div class="card-body">
 						<div class="form-group">
-							<label for="eventTitle">イベントタイトル（OBSで設定の場合はブランク）</label>
+							<label for="eventTitle">イベントタイトル</label>
 							<textarea class="form-control" id="event_title" rows="3"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">メディア設定</div>
+					<div class="card-body">
+						<div class="form-group mb-3">
+							<label for="mediaType">メディアの種類</label>
+							<select class="custom-select" id="mediaType">
+								<option value="tw1">Twitter（青背景）</option>
+								<option value="tw2">Twitter（白背景）</option>
+								<option value="slido1">Sli.do（緑背景）</option>
+								<option value="slido2">Sli.do（白背景）</option>
+								<option value="yt1">YouTube（赤背景）</option>
+								<option value="yt2">YouTube（白背景）</option>								
+								<option value="blanc">なし</option>
+							</select>
 						</div>
 					</div>
 				</div>
 
 
 			</div>
-		</div>
-
+		</div>	
 
 		<hr>
 		<p>
