@@ -18,3 +18,8 @@ h1{
 #bgBrightness {
 	text-align: center;
 }
+
+.btn-group label:first-of-type{
+	border-top-left-radius: .25rem !important;
+	border-bottom-left-radius: .25rem !important;
+}

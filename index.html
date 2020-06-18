@@ -33,7 +33,7 @@
 						<label for="layout">レイアウト</label>
 
 						<div class="form-group">
-							<div class="btn-group" id="layout">
+							<div class="btn-group mb-3 input-group" id="layout">
 								<input type="radio" class="btn-check" name="layout" id="layoutA" autocomplete="off" checked>
 								<label class="btn btn-outline-secondary" for="layoutA">A</label>
 								<input type="radio" class="btn-check" name="layout" id="layoutB" autocomplete="off">
@@ -52,7 +52,7 @@
 
 
 						<div class="form-group">
-							<div class="btn-group" id="frameSize">
+							<div class="btn-group mb-3 input-group" id="frameSize">
 								<input type="radio" class="btn-check" name="frameSize" id="layoutA" autocomplete="off" checked>
 								<label class="btn btn-outline-secondary" for="frameSizeFHD">1920*1080</label>
 								<input type="radio" class="btn-check" name="frameSize" id="layoutB" autocomplete="off">
@@ -67,9 +67,8 @@
 				<div class="card">
 					<div class="card-header">背景設定</div>
 					<div class="card-body">
+
 						<label for="bgImage" class="form-label">背景画像</label>
-
-
 						<div class="form-group mb-3">
 							<select id="bgImage" class="form-select">
 								<option value="sky">青空</option>
@@ -78,9 +77,6 @@
 								<option value="custom">画像をアップロード…</option>
 							</select>
 						</div>
-
-
-
 						<div class="input-group mb-3">
 							<div class="form-file">
 								<input type="file" class="form-file-input" id="customBgImage" aria-describedby="inputGroupFileAddon01">
@@ -92,7 +88,6 @@
 						</div>
 
 						<label for="bgBrightness">明るさ</label>
-
 						<div class="input-group mb-3">
 							<button class="btn btn-outline-secondary" type="button" id="bgBrightnessMinus10">-10</button>
 							<button class="btn btn-outline-secondary" type="button" id="bgBrightnessMinus5">-5</button>
@@ -100,24 +95,36 @@
 							<button class="btn btn-outline-secondary" type="button" id="bgBrightnessPlus5">+5</button>
 							<button class="btn btn-outline-secondary" type="button" id="bgBrightnessPlus10">+10</button>
 						</div>
+
 					</div>
 				</div>
-
-
 
 				<div class="card">
 					<div class="card-header">タイトル設定</div>
 					<div class="card-body">
+
 						<label for="eventTitle">イベントタイトル</label>
 						<div class="form-group">
 							<textarea class="form-control" id="event_title" rows="3"></textarea>
 						</div>
+
+						<label for="titleFrame">タイトルのフレーム</label>
+						<div class="form-group mb-3">
+							<select id="titleFrame" class="form-select">
+								<option value="typeA">タイプA</option>							
+								<option value="typeB">タイプB</option>							
+								<option value="typeC">タイプC</option>							
+								<option value="blanc">なし</option>
+							</select>
+						</div>
+						
 					</div>
 				</div>
 
 				<div class="card">
 					<div class="card-header">メディア設定</div>
 					<div class="card-body">
+
 						<label for="mediaType">メディアの種類</label>
 						<div class="form-group mb-3">
 							<select id="mediaType" class="form-select">
@@ -130,6 +137,7 @@
 								<option value="blanc">なし</option>
 							</select>
 						</div>
+
 					</div>
 				</div>
 			</div>
